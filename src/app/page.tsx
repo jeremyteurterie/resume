@@ -16,6 +16,7 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
+  <div>
     <main className="container relative mx-auto scroll-my-12 overflow-auto p-4 print:p-12 md:p-16">
       <section className="mx-auto w-full max-w-2xl space-y-8 bg-white print:space-y-6">
         <div className="flex items-center justify-between">
@@ -174,7 +175,7 @@ export default function Page() {
         </Section>
       </section>
 
-      <CommandMenu
+      {/* <CommandMenu
         links={[
           {
             url: RESUME_DATA.personalWebsiteUrl,
@@ -185,7 +186,14 @@ export default function Page() {
             title: socilaMediaLink.name,
           })),
         ]}
-      />
+      /> */}
     </main>
+
+    <footer className="text-sm text-muted-foreground m-2">
+        <h3 className="flex justify-center">© 2024 Jeremy Teurterie. All Rights Reserved.</h3>
+    </footer>
+  </div>
   );
+
+
 }
